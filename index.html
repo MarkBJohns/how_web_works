@@ -8,6 +8,23 @@
 </head>
 <body>
     <h1>How the Web Works</h1>
+    
+    <h2>Exercise</h2>
+    <hr>
+    <ol>
+        <li> <b>HTTP</b> - Hypertext transfer protocol, it takes in the html code and converts it into something readable on a browser </li>
+        <li><b>URL</b> - Universal Resource Locator, it's like an address for a webpage that states a protocol, hostname, port, resource, and query.</li>
+        <li><b>DNS</b> - Domain Name System, it takes things like IP addresses and other raw data and converts it into more readable text to make a webpage name.</li>
+        <li><b>Query String</b> - The part of the url that accounts for any 'get' requests you've added to the webpage, such as sorting elements in a particular order, submitting a search, or changing a setting.</li>
+        <li><b>HTTP Verbs</b> -
+            <ol>
+            <li><b>Get</b> - A 'get' request is a request that doesn't change any server data, as in it doesn't create or delete any elements, and is often done by the user as they navigate a webpage.</li>
+            <li><b>Post</b> - A 'post' request is when the user adds content to a webpage, such as an image, blog post, status update, etc, and leaves a side effect in the server data by adding elements.</li>
+            </ol>
+        </li>
+        <li><b>HTTP Header</b> - An http header gives extra information to a client about the server's protocol and help the server and client communicate. A request header can be something like the domain name of the server (host), credentials to authenticate the client, or information about the user's previous activities, preferences, and interactions (cookies). A response server can specify what type of media is being sent to the client (content-type), the software being used by the server, or letting the client know that a cookie is being created.</li>
+        <li><b>Typing a link</b> - When you type http://somesite.com/some/page.html into the browser, the browser will first check to see if the IP for this website is stored in its cache, and if not, it will initiate a DNS lookup to search for it. Once the IP is found, it will connect to the appropriate server. From there, it will send a 'get' request to the server for the resource "/some/ page/html", including headers http headers. The server will process that request and retrieve the resource, then prepare a response. That response is sent back to the browser, including the headers and appropriate content (html, css, js, etc). The browser then processes the response and renders the page, parsing the html, stylesheets, and scripts, then displays the visuals of the page.</li>
+    </ol>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
